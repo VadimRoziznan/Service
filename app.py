@@ -22,7 +22,7 @@ pip install requests
 #sudo apt install espeak
 sudo apt-get install espeak-ng
 sudo apt-get install alsa-utils
- sudo apt update && sudo apt install espeak ffmpeg libespeak1
+sudo apt update && sudo apt install espeak ffmpeg libespeak1
 sudo apt-get install festival speech-tools
 sudo apt-get install festvox-ru
 
@@ -78,7 +78,7 @@ import voice
 
 q = queue.Queue()
 
-model = vosk.Model('vosk-model-small-ru-0.22')       #голосовую модель vosk нужно поместить в папку с файлами проекта
+model = vosk.Model('../vosk-models/vosk-model-small-ru-0.22')       #голосовую модель vosk нужно поместить в папку с файлами проекта
                                         #https://alphacephei.com/vosk/
                                         #https://alphacephei.com/vosk/models
 
